@@ -1,10 +1,18 @@
 <template>
-  <v-slide-group 
-    ref="slideGroup"
-    show-arrows
+  <v-slide-group ref="slideGroup" show-arrows center-active>
+    <v-slide-group-item
+      v-for="(item, i) in items"
+      :key="i"
+      v-slot="{ toggle }"
     >
-    <v-slide-group-item v-for="(item, i) in items" :key="i">
-      <v-card class="ma-2" height="220" :width="cardWidth" rounded>
+      <v-card
+        class="ma-2"
+        height="220"
+        :width="cardWidth"
+        rounded
+        @click="toggle"
+
+      >
         {{ item.title }}
       </v-card>
     </v-slide-group-item>
@@ -12,8 +20,6 @@
 </template>
 
 <script>
-import { useElementSize } from '@vueuse/core'
-
 export default {
   name: "ContentBar",
   data() {
@@ -23,22 +29,11 @@ export default {
         title: "Item " + v + 1,
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde voluptatem!",
       })),
+      cardWidth: 300,
     };
   },
-  computed: {
-    slideGroupWidth() {
-      const { width, _ } = useElementSize(this.$refs.slideGroup)
-      console.log(width)
-      return width;
-    },
-    slideGroupHeight() {
-      const { _, height } = useElementSize(this.$refs.slideGroup)
-      return height;
-    },
-    cardWidth() {
-      console.log(this.slideGroupWidth/4)
-      return this.slideGroupWidth / 4
-    }
+  mounted() {
+    this.cardWidth = this.$refs.slideGroup.$el.clientWidth / 4;
   },
 };
 </script>
