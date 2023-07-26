@@ -20,22 +20,28 @@
     location="bottom"
     style="overflow: auto"
   >
+  <v-container fluid>
     <v-window v-model="tab">
       <v-window-item value="projects">
         <ProjectTab />
       </v-window-item>
-      <v-window-item value="skills"></v-window-item>
+      <v-window-item value="skills"> 
+        <SkillTab /> 
+      </v-window-item>
       <v-window-item value="about"></v-window-item>
     </v-window>
+  </v-container>
+
   </v-app-bar>
 </template>
 
 <script>
 import ProjectTab from "@/components/ProjectTab.vue";
+import SkillTab from "@/components/SkillTab.vue";
 
 export default {
   name: "ContentControl",
-  components: { ProjectTab },
+  components: { ProjectTab, SkillTab },
   data() {
     return {
       tab: "projects",

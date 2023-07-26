@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
   .v-main {
-    background: linear-gradient(-45deg, #b55538, #b0275c, #2c9e89, #aed22e);
+    background: linear-gradient(-45deg, #385bb5, #b0275c, #2c9e89, #aed22e);
 	  background-size: 400% 400%;
 	  animation: gradient 15s ease infinite;
 	 }
