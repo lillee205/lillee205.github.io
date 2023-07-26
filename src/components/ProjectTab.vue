@@ -1,27 +1,28 @@
 <template>
-  <v-slide-group ref="slideGroup" show-arrows center-active>
-    <v-slide-group-item
-      v-for="(item, i) in items"
-      :key="i"
-      v-slot="{ toggle }"
-    >
-      <v-card
-        class="ma-2"
-        height="220"
-        :width="cardWidth"
-        rounded
-        @click="toggle"
+<v-slide-group ref="slideGroup" show-arrows center-active>
+        <v-slide-group-item
+          v-for="(item, i) in items"
+          :key="i"
+          v-slot="{ toggle }"
+        >
+          <v-card
+            class="ma-2"
+            height="220"
+            color="secondary"
+            :width="cardWidth"
+            rounded
+            @click="toggle"
 
-      >
-        {{ item.title }}
-      </v-card>
-    </v-slide-group-item>
-  </v-slide-group>
+          >
+            {{ item.title }}
+          </v-card>
+        </v-slide-group-item>
+      </v-slide-group>
 </template>
 
 <script>
 export default {
-  name: "ContentBar",
+  name: "ProjectTab",
   data() {
     return {
       page: 1,
