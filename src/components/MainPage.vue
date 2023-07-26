@@ -28,6 +28,21 @@ export default {
 
 <style scoped>
   .v-main {
-    background: linear-gradient(#4DD6BD,#191A27 40%);
-  }
+    background: linear-gradient(-45deg, #b55538, #b0275c, #2c9e89, #aed22e);
+	  background-size: 400% 400%;
+	  animation: gradient 15s ease infinite;
+	 }
+  
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 </style>
