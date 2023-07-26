@@ -1,6 +1,6 @@
 <template>
-  <v-layout fluid class="fill-height">
-    <v-system-bar color="tertiary"> Lilly Lee </v-system-bar>
+  <v-layout class="fill-height">
+    <v-system-bar color="tertiary"> Last updated: July 2023 </v-system-bar>
     <v-navigation-drawer color="primary" location="left" permanent>
       <v-list>
         <v-list-item title="Home" prepend-icon="mdi-home" value="home"></v-list-item>
@@ -30,6 +30,7 @@ export default {
   .v-main {
     background: linear-gradient(-45deg, #385bb5, #b0275c, #2c9e89, #aed22e);
 	  background-size: 400% 400%;
+    width:100vw;
 	  animation: gradient 15s ease infinite;
 	 }
   

@@ -16,7 +16,7 @@
   </v-app-bar>
   <v-app-bar
     color="darkest"
-    height="400"
+    height="300"
     location="bottom"
     style="overflow: auto"
   >
