@@ -16,9 +16,9 @@
   </v-app-bar>
   <v-app-bar
     color="darkest"
-    height="300"
     location="bottom"
-    style="overflow: auto"
+    style="overflow: auto;"
+    height="350"
   >
   <v-container fluid>
     <v-window v-model="tab">

@@ -1,8 +1,6 @@
 <template >
     <v-card
         class="d-flex align-center pa-4"
-        width="50%"
-        height="90%"
     >
         <div class="d-flex flex-no-wrap align-center">
             <v-avatar

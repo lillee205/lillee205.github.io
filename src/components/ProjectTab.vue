@@ -3,7 +3,6 @@
     <v-slide-group-item v-for="(item, i) in items" :key="i" v-slot="{ toggle }">
       <v-card
         class="ma-2 d-flex flex-column"
-        height="220"
         color="secondary"
         :width="cardWidth"
         rounded

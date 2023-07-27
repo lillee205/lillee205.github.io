@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="fill-height">
+  <v-app class="fill-height">
     <v-system-bar color="tertiary"> Last updated: July 2023 </v-system-bar>
     <v-navigation-drawer color="primary" location="left" permanent>
       <v-list>
@@ -11,10 +11,10 @@
 
       <ContentControl/>
 
-    <v-main class="d-flex align-center justify-center">
+    <v-main class="d-flex align-center justify-center" style="min-height:300px;min-width:1400px">
       <ProfileCard />
     </v-main>
-  </v-layout>
+  </v-app>
 </template>
 
 <script>
