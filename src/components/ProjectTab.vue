@@ -8,6 +8,12 @@
         rounded
         @click="toggle"
       >
+        <v-img
+          src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+          max-height="100"
+          :width="cardWidth"
+          cover
+        ></v-img>
         <v-card-title
           >{{ item.title }}
           <v-icon icon="mdi-open-in-new" size="x-small" end @click="toLink(item.link)"></v-icon
@@ -49,9 +55,6 @@ export default {
       ],
       cardWidth: 300,
     };
-  },
-  mounted() {
-    this.cardWidth = this.$refs.slideGroup.$el.clientWidth / 4;
   },
   methods: {
     toLink(link) {
