@@ -17,7 +17,6 @@
   <v-app-bar
     color="darkest"
     location="bottom"
-    style="overflow: auto;"
     height="350"
   >
   <v-container fluid>
