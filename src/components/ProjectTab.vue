@@ -62,21 +62,21 @@ export default {
           desc: "A coding site akin to CodingBat specifically for Harvey Mudd's introductory CS class",
           skills: ["HTML", "CSS", "JS", "Python", "Flask", "SQLAlchemy"],
           link: "https://github.com/lillee205/codingwithwally",
-          pic:"./../public/projects/codingWithWally.png"
+          pic:"./../projects/codingWithWally.png"
         },
         {
           title: "weSearch",
           desc: "A web-app for efficient organization and communication when forming search parties for missing people. Won 1st place in the 2019 Congressional App Challenge.",
           skills: ["HTML", "CSS", "JS", "Node", "Firebase"], 
           link: "https://www.youtube.com/watch?v=RXJaR72ju3g",
-          pic: "./../public/projects/weSearch.png"
+          pic: "./../projects/weSearch.png"
 
         }, {
           title: "coloringBook",
           desc: "Uses Pillow to detect outlines of the line art on a coloring page, and fills space in with specified color.",
           skills: ["Flask", "Pillow", "HTML canvas"],
           link: "https://github.com/lillee205/coloringBook",
-          pic: "./../public/projects/coloringBook.png"
+          pic: "./../projects/coloringBook.png"
         }, {
           title: "donKaScript",
           desc: "Built grammar tree to parse plain text taiko (Japanese percussion) language to sheet music.",
