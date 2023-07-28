@@ -1,7 +1,7 @@
 <template>
   <v-app class="fill-height" >
     <v-system-bar color="tertiary"> Last updated: July 2023 </v-system-bar>
-    <v-navigation-drawer color="primary" location="left" permanent>
+    <v-navigation-drawer color="primary" location="left" width="200" permanent>
       <v-list>
         <v-list-item title="Home" prepend-icon="mdi-home" value="home"></v-list-item>
         <v-list-item title="Github" prepend-icon="mdi-github" value="gh"></v-list-item>

@@ -1,7 +1,7 @@
 <template>
   <v-container
-    class="d-flex justify-center flex-wrap pa-0 ma-0"
-    style="overflow-y: scroll; max-height: 350px"
+    class="d-flex justify-center flex-wrap pa-0"
+    style="overflow-y: auto; max-height: 350px"
     fill-width
   >
     <v-card
@@ -18,8 +18,7 @@
           :key="j"
           class="ma-1"
           size="small"
-          :color="getChipColor(bullet)"
-          variant="elevated"
+          color="accent"
         >
           {{ bullet }}
         </v-chip>
@@ -29,7 +28,6 @@
 </template>
 
 <script>
-import { getColor } from "@/plugins/utils.js";
 
 export default {
   name: "SkillTab",
@@ -68,22 +66,6 @@ export default {
         },
       ],
     };
-  },
-  methods: {
-    getChipColor(str) {
-      var stringHexNumber = 
-      (
-        parseInt(
-          parseInt(str, 36)
-            .toExponential()
-            .slice(2, -5),
-          10
-        ) & 0xffffff
-      ) 
-        .toString(16)
-        .toUpperCase();
-      return ('#' + ('000000' + stringHexNumber).slice(-6))
-    },
   },
 };
 </script>

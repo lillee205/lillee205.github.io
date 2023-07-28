@@ -27,7 +27,9 @@
       <v-window-item value="skills"> 
         <SkillTab /> 
       </v-window-item>
-      <v-window-item value="about"></v-window-item>
+      <v-window-item value="about">
+        <AboutTab />
+      </v-window-item>
     </v-window>
   </v-container>
 
@@ -37,10 +39,10 @@
 <script>
 import ProjectTab from "@/components/ProjectTab.vue";
 import SkillTab from "@/components/SkillTab.vue";
-
+import AboutTab from "@/components/AboutTab.vue"
 export default {
   name: "ContentControl",
-  components: { ProjectTab, SkillTab },
+  components: { ProjectTab, SkillTab, AboutTab },
   data() {
     return {
       tab: "projects",

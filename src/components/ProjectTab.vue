@@ -4,29 +4,39 @@
       <v-card
         class="ma-2 d-flex flex-column"
         color="secondary"
-        :width="cardWidth"
+        width="300"
         rounded
         @click="toggle"
       >
         <v-img
           src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
           max-height="100"
-          :width="cardWidth"
+          width="300"
           cover
         ></v-img>
         <v-card-title
           >{{ item.title }}
-          <v-icon icon="mdi-open-in-new" size="x-small" end @click="toLink(item.link)"></v-icon
+          <v-icon
+            icon="mdi-open-in-new"
+            size="x-small"
+            end
+            @click="toLink(item.link)"
+          ></v-icon
         ></v-card-title>
         <v-card-text> {{ item.desc }} </v-card-text>
         <v-spacer></v-spacer>
         <v-card-actions>
           <v-container class="d-flex flex-wrap ma-0 pa-0">
-          <v-chip v-for="(skill, j) in item.skills" :key="j" class="ma-1" size="x-small">
-            {{ skill }}
-          </v-chip>
-                  </v-container>
-
+            <v-chip
+              v-for="(skill, j) in item.skills"
+              :key="j"
+              class="ma-1"
+              size="x-small"
+              color="accent"
+            >
+              {{ skill }}
+            </v-chip>
+          </v-container>
         </v-card-actions>
       </v-card>
     </v-slide-group-item>
@@ -53,13 +63,12 @@ export default {
           link: "https://github.com/lillee205/codingwithwally",
         },
       ],
-      cardWidth: 300,
     };
   },
   methods: {
     toLink(link) {
-      window.open(link, '_blank'); 
-    }
-  }
+      window.open(link, "_blank");
+    },
+  },
 };
 </script>
