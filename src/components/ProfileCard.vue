@@ -15,8 +15,8 @@
                 <v-card-subtitle>Full-stack Software Engineer</v-card-subtitle>
                 <v-card-text>A CS major at Harvey Mudd College, Class of 2024</v-card-text>
                 <v-container>
-                    <v-btn class = "mr-4">Resume</v-btn>
-                    <v-btn>lglee@hmc.edu</v-btn>
+                    <v-btn class = "mr-4" style="color:black;">Resume</v-btn>
+                    <v-btn style="color:black;">lglee@hmc.edu</v-btn>
                 </v-container>
             </div>
 
