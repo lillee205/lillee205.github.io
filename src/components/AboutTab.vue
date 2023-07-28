@@ -17,14 +17,8 @@
         ></v-img>
         <v-card-title
           >{{ item.title }}
-          <v-icon
-            icon="mdi-open-in-new"
-            size="x-small"
-            end
-            @click="toLink(item.link)"
-          ></v-icon
-        ></v-card-title>
-        <v-card-text style="overflow-y:scroll;"> {{ item.desc }} </v-card-text>
+        </v-card-title>
+        <v-card-text style="overflow-y:auto;"> {{ item.desc }} </v-card-text>
         <v-card-actions v-if="item.showMore">
             <v-btn>MORE</v-btn>
         </v-card-actions>

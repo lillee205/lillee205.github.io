@@ -3,13 +3,14 @@
     <v-slide-group-item v-for="(item, i) in items" :key="i" v-slot="{ toggle }">
       <v-card
         class="ma-2 d-flex flex-column"
+        style="max-height:300px;"
         color="secondary"
         width="300"
         rounded
         @click="toggle"
       >
         <v-img
-          src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+          :src="item.pic ? item.pic : 'https://cdn.vuetifyjs.com/images/parallax/material.jpg'"
           max-height="100"
           width="300"
           cover
@@ -23,7 +24,7 @@
             @click="toLink(item.link)"
           ></v-icon
         ></v-card-title>
-        <v-card-text> {{ item.desc }} </v-card-text>
+        <v-card-text style="overflow-y:auto;"> {{ item.desc }} </v-card-text>
         <v-spacer></v-spacer>
         <v-card-actions>
           <v-container class="d-flex flex-wrap ma-0 pa-0">
@@ -61,7 +62,26 @@ export default {
           desc: "A coding site akin to CodingBat specifically for Harvey Mudd's introductory CS class",
           skills: ["HTML", "CSS", "JS", "Python", "Flask", "SQLAlchemy"],
           link: "https://github.com/lillee205/codingwithwally",
+          pic:"./../public/projects/codingWithWally.png"
         },
+        {
+          title: "weSearch",
+          desc: "A web-app for efficient organization and communication when forming search parties for missing people. Won 1st place in the 2019 Congressional App Challenge.",
+          skills: ["HTML", "CSS", "JS", "Node", "Firebase"], 
+          link: "https://www.youtube.com/watch?v=RXJaR72ju3g",
+          pic: "./../public/projects/weSearch.png"
+
+        }, {
+          title: "coloringBook",
+          desc: "Uses Pillow to detect outlines of the line art on a coloring page, and fills space in with specified color.",
+          skills: ["Flask", "Pillow", "HTML canvas"],
+          link: "https://github.com/lillee205/coloringBook",
+          pic: "./../public/projects/coloringBook.png"
+        }, {
+          title: "donKaScript",
+          desc: "Built grammar tree to parse plain text taiko (Japanese percussion) language to sheet music.",
+          link: "https://github.com/hmc-cs111-spring2023/artifact-lillee205",
+        }
       ],
     };
   },
