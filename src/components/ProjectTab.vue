@@ -1,4 +1,5 @@
 <template>
+
   <v-slide-group ref="slideGroup" show-arrows center-active>
     <v-slide-group-item v-for="(item, i) in items" :key="i" v-slot="{ toggle }">
       <v-card
@@ -78,8 +79,8 @@ export default {
           link: "https://github.com/lillee205/coloringBook",
           pic: "./../projects/coloringBook.png"
         }, {
-          title: "donKaScript",
-          desc: "Built grammar tree to parse plain text taiko (Japanese percussion) language to sheet music.",
+          title: "DonKaScript",
+          desc: "Simple website that parses plain text taiko (Japanese percussion) language to sheet music. Uses Quill to allow for rich text formatting, Peggy to create the grammar tree and parse text, and VexTab for the final sheet music output.",
           link: "https://github.com/hmc-cs111-spring2023/artifact-lillee205",
         }
       ],

@@ -4,8 +4,8 @@
     <v-navigation-drawer color="primary" location="left" width="200" permanent>
       <v-list >
         <v-list-item title="Home" prepend-icon="mdi-home"></v-list-item>
-        <v-list-item title="Github" prepend-icon="mdi-github"></v-list-item>
-        <v-list-item title="LinkedIn" prepend-icon="mdi-linkedin"></v-list-item>
+        <v-list-item class="link" title="Github" href="https://github.com/lillee205" prepend-icon="mdi-github"></v-list-item>
+        <v-list-item class="link" title="LinkedIn" href="https://www.linkedin.com/in/lillee205" prepend-icon="mdi-linkedin"></v-list-item>
       </v-list>
     </v-navigation-drawer>
 
@@ -45,5 +45,13 @@ export default {
 		background-position: 0% 50%;
 	}
 }
+  .link {
+    transition: 100ms ease background;
+  }
+  .link:hover{
+    transition: ease 100ms background;
+    background:#424d60;
+    cursor: pointer;
+  }
 
 </style>
