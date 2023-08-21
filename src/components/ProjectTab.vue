@@ -54,27 +54,26 @@ export default {
       items: [
         {
           title: "github page",
-          desc: "Code for the site you're looking at right now!",
+          desc: "Code for the site you're looking at right now! Built using the Vuetify UI library which relies on Vue to create a clean and responsive design.",
           skills: ["Vue", "Vuetify", "JS"],
           link: "",
         },
         {
           title: "coding with wally",
-          desc: "A coding site akin to CodingBat specifically for Harvey Mudd's introductory CS class",
+          desc: "A coding site akin to CodingBat specifically for Harvey Mudd's introductory CS class. This is a webapp that uses a Python backend with Flask, and relies on the SQLAlchemy database to retrieve problem sets.",
           skills: ["HTML", "CSS", "JS", "Python", "Flask", "SQLAlchemy"],
           link: "https://github.com/lillee205/codingwithwally",
           pic:"./../projects/codingWithWally.png"
         },
         {
           title: "weSearch",
-          desc: "A web-app for efficient organization and communication when forming search parties for missing people. Won 1st place in the 2019 Congressional App Challenge.",
+          desc: "A web-app for efficient organization and communication when forming search parties for missing people. It uses Firebase to manage messaging between users, account authentication, and more. Won 1st place in the 2019 Congressional App Challenge.",
           skills: ["HTML", "CSS", "JS", "Node", "Firebase"], 
           link: "https://www.youtube.com/watch?v=RXJaR72ju3g",
           pic: "./../projects/weSearch.png"
-
         }, {
           title: "coloringBook",
-          desc: "Uses Pillow to detect outlines of the line art on a coloring page, and fills space in with specified color.",
+          desc: "Uses Pillow to detect outlines of the line art on a coloring page, and fills space in with specified color. Explored dynamic programming algorithms to fill in space efficiently.",
           skills: ["Flask", "Pillow", "HTML canvas"],
           link: "https://github.com/lillee205/coloringBook",
           pic: "./../projects/coloringBook.png"
@@ -82,6 +81,13 @@ export default {
           title: "DonKaScript",
           desc: "Simple website that parses plain text taiko (Japanese percussion) language to sheet music. Uses Quill to allow for rich text formatting, Peggy to create the grammar tree and parse text, and VexTab for the final sheet music output.",
           link: "https://github.com/hmc-cs111-spring2023/artifact-lillee205",
+          skills: ["Peggy.js, VexTab, Quill.js"],
+          pic: "./../projects/donKa.png"
+        }, {
+          title: "puffle roundup",
+          desc: "A VPython rendition of Club Penguin's Puffle Roundup game hosted on GlowScript (Chrome recommended to play). You control a penguin to herd little puffballs into an enclosure; the winning condition is simply to get all of them corralled.",
+          skills: ["Python", "VPython"],
+          pic: "./../projects/puffleRoundup.png"
         }
       ],
     };

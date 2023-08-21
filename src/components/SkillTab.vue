@@ -40,7 +40,7 @@ export default {
         },
         {
           title: "Languages",
-          bullets: ["English", "Korean", "Japanese"],
+          bullets: ["English", "Korean", "Japanese (curr. learning)"],
         },
         {
           title: "Back End",

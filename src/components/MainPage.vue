@@ -1,6 +1,7 @@
 <template>
+
   <v-app class="fill-height" >
-    <v-system-bar color="tertiary"> Last updated: July 2023 </v-system-bar>
+    <v-system-bar color="tertiary"> Last updated: August 2023 </v-system-bar>
     <v-navigation-drawer color="primary" location="left" width="200" permanent>
       <v-list >
         <v-list-item title="Home" prepend-icon="mdi-home"></v-list-item>
@@ -11,7 +12,7 @@
 
       <ContentControl/>
 
-    <v-main class="d-flex align-center justify-center" style="min-height:300px;min-width:1400px;">
+    <v-main class="d-flex align-center justify-center" style="min-height:300px;min-width:1000px;">
       <ProfileCard />
     </v-main>
   </v-app>
