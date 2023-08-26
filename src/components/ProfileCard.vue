@@ -1,9 +1,15 @@
 <template>
-  <v-card class="d-flex align-center pa-4 w-75 h-75 ma-2" style="min-width:450px;max-width:700px;">
+  <v-card
+    class="d-flex align-center pa-4 w-75 h-75 ma-2"
+    style="min-width: 450px; max-width: 700px"
+  >
     <div class="d-flex flex-no-wrap align-center">
-        <v-img src="./../../public/megrass.jpeg" style="max-height:250px;"></v-img>
-      <div style=" flex:2;">
-        <div style="max-height: 20vh; overflow: scroll;">
+      <v-img
+        src="./../../public/megrass.jpeg"
+        style="max-height: 250px"
+      ></v-img>
+      <div style="flex: 2">
+        <div style="max-height: 20vh; overflow: scroll">
           <v-card-title style="margin-bottom: -8px">Lilly Lee</v-card-title>
           <v-card-subtitle style="margin-bottom: -8px"
             >Full-stack Software Engineer // Harvey Mudd College, Co
@@ -25,9 +31,16 @@
             href="./../../public/LillianLeeResume.pdf"
             download="Lillian_Lee_Resume"
           >
-            <v-btn class="mr-4" style="color: black"> Resume </v-btn>
+            <v-btn class="mr-4" style="color: black">
+              Resume
+            </v-btn>
           </a>
-          <v-btn style="color: black">lglee@hmc.edu</v-btn>
+              <v-btn style="color: black" @click="copyEmail">lglee@hmc.edu</v-btn>
+            <v-bottom-sheet v-model="sheet">
+            <v-card content-class="customDialog">
+              <v-card-text> Email copied to clipboard! </v-card-text>
+            </v-card>
+          </v-bottom-sheet>
         </v-container>
       </div>
     </div>
@@ -37,6 +50,17 @@
 <script>
 export default {
   name: "ProfileCard",
+  data() {
+    return {
+      sheet: false
+    }
+  },
+  methods: {
+    copyEmail() {
+      this.sheet = true;
+      navigator.clipboard.writeText("lglee@hmc.edu");
+    },
+  },
 };
 </script>
 
@@ -47,5 +71,8 @@ export default {
 }
 .v-btn {
   background-color: #4dd6bd;
+}
+:deep .customDialog{
+  position: absolute; bottom: 0;
 }
 </style>
