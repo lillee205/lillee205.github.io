@@ -1,7 +1,7 @@
 <template>
   <v-container
     class="d-flex justify-center flex-wrap pa-0"
-    style="overflow-y: auto; max-height: 350px"
+    style="overflow-y: auto;"
     fill-width
   >
     <v-card

@@ -1,19 +1,17 @@
 <template>
-
-  <v-slide-group ref="slideGroup" show-arrows center-active>
-    <v-slide-group-item v-for="(item, i) in items" :key="i" v-slot="{ toggle }">
+  <v-slide-group class="text-white h-100" ref="slideGroup" show-arrows center-active>
+    <v-slide-group-item  v-for="(item, i) in items" :key="i" v-slot="{ toggle }">
       <v-card
         class="ma-2 d-flex flex-column"
-        style="max-height:300px;"
         color="secondary"
         width="300"
+        style="max-height:300px;"
         rounded
         @click="toggle"
       >
         <v-img
           :src="item.pic ? item.pic : 'https://cdn.vuetifyjs.com/images/parallax/material.jpg'"
           max-height="100"
-          width="300"
           cover
         ></v-img>
         <v-card-title
@@ -25,8 +23,7 @@
             @click="toLink(item.link)"
           ></v-icon
         ></v-card-title>
-        <v-card-text style="overflow-y:auto;"> {{ item.desc }} </v-card-text>
-        <v-spacer></v-spacer>
+        <v-card-text style="overflow-y:scroll;min-height:0;flex: 1"> {{ item.desc }} </v-card-text>
         <v-card-actions>
           <v-container class="d-flex flex-wrap ma-0 pa-0">
             <v-chip
@@ -56,7 +53,7 @@ export default {
           title: "github page",
           desc: "Code for the site you're looking at right now! Built using the Vuetify UI library which relies on Vue to create a clean and responsive design.",
           skills: ["Vue", "Vuetify", "JS"],
-          link: "",
+          link: "https://github.com/lillee205/lillee205.github.io",
         },
         {
           title: "coding with wally",
@@ -67,7 +64,7 @@ export default {
         },
         {
           title: "weSearch",
-          desc: "A web-app for efficient organization and communication when forming search parties for missing people. It uses Firebase to manage messaging between users, account authentication, and more. Won 1st place in the 2019 Congressional App Challenge.",
+          desc: "A web-app for efficient organization and communication when forming search parties for missing people. It uses Firebase to manage messaging between users, account authentication, and more. Won 1st place in the 2019 Congressional App Challenge.A web-app for efficient organization and communication when forming search parties for missing people. It uses Firebase to manage messaging between users, account authentication, and more. Won 1st place in the 2019 Congressional App Challenge.A web-app for efficient organization and communication when forming search parties for missing people. It uses Firebase to manage messaging between users, account authentication, and more. Won 1st place in the 2019 Congressional App Challenge.",
           skills: ["HTML", "CSS", "JS", "Node", "Firebase"], 
           link: "https://www.youtube.com/watch?v=RXJaR72ju3g",
           pic: "./../projects/weSearch.png"

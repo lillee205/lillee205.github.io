@@ -1,12 +1,14 @@
 <template>
   <v-switch
+  class="text-white"
+  
     style="margin-bottom: -10px; margin-top: -15px"
     v-model="onHobbies"
     :label="onHobbies ? 'Hobbies' : 'Organizations & Clubs'"
     hide-details
   >
   </v-switch>
-  <v-slide-group ref="slideGroup" show-arrows center-active>
+  <v-slide-group ref="slideGroup" show-arrows center-active class="text-white" >
     <v-slide-group-item
       v-if="isMounted"
       v-for="(item, i) in items"
@@ -23,6 +25,7 @@
         style="max-height: 280px"
         color="secondary"
         width="300"
+        
         rounded
         @click="toggle"
       >
@@ -38,7 +41,7 @@
           {{ item.position }}
         </v-card-subtitle>
 
-        <v-card-text style="overflow-y: auto; padding-top:2px;" > {{ item.desc }} </v-card-text>
+        <v-card-text style="overflow-y: auto; padding-top:2px;min-height:0;flex: 1;" > {{ item.desc }} </v-card-text>
         <v-card-actions v-if="item.showMore" @click="toggleMore(item.title)">
           <v-btn>MORE</v-btn>
         </v-card-actions>
@@ -59,6 +62,12 @@ export default {
       isMounted: false,
       page: 1,
       orgs: [
+        {
+          title: "ashmc",
+          position: "club director",
+          desc: "As part of my college's executive board, I oversee all clubs and ensure that they're running smoothly, acting as a resource presidents can turn towards. I also arrange campus events such as the semesterly Club Fair which showcases the many clubs our college has to share, and communicate with deans to relay information back to the student body.",
+          pic: "./../ashmc.jpg"
+        },
         {
           title: "apispam",
           position: "mentor",
