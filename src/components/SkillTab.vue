@@ -45,6 +45,7 @@ export default {
         {
           title: "Back End",
           bullets: [
+            "AWS", 
             "Spring Boot",
             "Flask",
             "Firebase",
@@ -62,7 +63,7 @@ export default {
         },
         {
           title: "Misc",
-          bullets: ["Jira", "Agile", "emacs", "graphic design", "Photoshop"],
+          bullets: ["Linux", "Jira", "Agile", "Emacs", "Graphic design", "Photoshop"],
         },
       ],
     };

@@ -16,7 +16,8 @@
             2024</v-card-subtitle
           >
           <v-card-text>
-            I'm a CS major at HMC looking for full-time opportunities! My
+            Currently working as a full-stack software engineer; former CS major 
+            at Harvey Mudd College as of 2024. My
             specialty is webdev, including UI/UX design, frameworks, and
             creating backend services; however, I'm quick at picking up material
             on my own and take the initiative to learn new things (ex. creating
@@ -24,17 +25,10 @@
             people from my various leadership experiences, and enjoy staying
             organized with agile methodologies and my trusty calendar, so if you
             need someone on top of her stuff (and emails), reach out!
+
           </v-card-text>
         </div>
         <v-container>
-          <a
-            href="./../../public/LillianLeeResume.pdf"
-            download="Lillian_Lee_Resume"
-          >
-            <v-btn class="mr-4" style="color: black">
-              Resume
-            </v-btn>
-          </a>
               <v-btn style="color: black" @click="copyEmail">lglee@hmc.edu</v-btn>
             <v-bottom-sheet v-model="sheet">
             <v-card content-class="customDialog">
